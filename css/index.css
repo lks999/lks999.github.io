@@ -1,0 +1,74 @@
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+h1 {
+    font-size: 90px;
+    text-align: center;
+    margin-top: 120px;
+    position: relative;
+    animation: fadeInUp 5s;
+    color: white;
+}
+div img {
+    width: 400px;
+    height: 300px;
+    padding-left: 10px;
+    animation: fadeIn 3s;
+    transition: .3s;
+    border-radius: 30%;
+}
+
+.text1 {
+    display: none;
+    position: absolute;
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    right: 0px;
+    left: 0px;
+    top: 110px;
+    bottom: 0px;
+    font-size: 50px;
+    color: white;
+    z-index: 1;
+    
+}
+.container{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    z-index: 0;
+    border-radius: 30%;
+}
+.container:hover .text1 {
+    /* opacity: 1; */
+    visibility: visible;
+    display: block;
+}
+.container:hover img {
+    transform: scale(1.2);
+    filter: brightness(50%);
+}
+div#divAll {
+    display: inline-block;
+}
+body {
+    text-align: center;
+    background-image: url("images/indexback.jpg");
+    background-size: cover;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Cute+Font&family=Sunflower:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/introduce.css">
+</head>
+<style>
+    .one {
+        max-width:none;
+        max-height: none;
+        background-image: url("images/backgreen.png");
+        background-size: cover;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .two {
+    max-width:none;
+    max-height: none;
+    position: relative;
+    background-image: url("images/backblack.png");
+    background-size: cover;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.three {
+    max-width:none;
+    max-height: none;
+    position: relative;
+    background-image: url("images/keywordback.jpg");
+    background-size: cover;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.four {
+    max-width:none;
+    max-height: none;
+    position: relative;
+    background-image: url("images/backgreen.png");
+    background-size: cover;
+    text-align: center;
+    vertical-align: middle;
+}
+
+</style>
+<body>
+    <div class="parent row">
+        <div class="part one">
+            <h1 id="MainTitle">안녕하세요</h1>
+            <p id="subTitle">반갑습니다</p>
+            <p id="snap">snap!</p>
+            <img src="./images/pngegg.png" alt="" id="arrow">
+        </div>
+        <div class="part two">
+            <h1 id="about">ABOUT ME</h1>
+            <img src="./images/Me.jpg" alt="" id="myPixure">
+            <div id="name">Lee Kyung Seok</div>
+            <pre id="value">안녕하세요 이경석이라고 합니다.
+저는 군포에 거주하고 정보통신을 전공했습니다.
+학교 교양으로 웹 관련 수업을 듣다가 흥미를 가지게 되서 공부하게 되었습니다.
+...
+자기소개 라는거 정말 어렵네요.. 무슨 말을 써야할지...
+그래서 저와 관련된 것이나 성격 등을 키워드로 남겨봤습니다.
+
+남은 기간 서로 힘냅시다. 감사합니다.
+            </pre>
+
+            <p id="snap2">snap!</p>
+            <img src="./images/pngegg.png" alt="" id="arrow2">
+        </div>
+        <div class="part three">
+            <h1 id="thirdMain">personality</h1>
+            <div id="key1" class="keyword">잠이 많음</div>
+            <div id="key2" class="keyword">귀찮은걸 싫어함</div>
+            <div id="key3" class="keyword">의외로 꼼꼼함</div>
+            <div id="key4" class="keyword">낯가림이 조금 있음</div>
+            <div id="key5" class="keyword">현실적인 사람</div>
+            <div id="key6" class="keyword">피해주는 것을 싫어함</div>
+            <div id="key7" class="keyword">ISTJ</div>
+            <div id="key8" class="keyword">노는거 좋아함 그냥 놀고 싶음</div>
+            <div id="key9" class="keyword">주의 깊은</div>
+            <div id="key10" class="keyword">느긋한</div>
+            <div id="key11" class="keyword">평온함을 추구</div>
+            <div id="key12" class="keyword">맡은 일에 최선을 다함</div>
+
+            <p id="snap3">snap!</p>
+            <img src="./images/pngegg.png" alt="" id="arrow3">
+        </div>
+        <div class="part four">
+            <h1 id="Thank">Thank you!</h1>
+            <p id="end">end</p>
+        </div>   
+    </div>
+
+    <button class="fourth position-fixed" onclick="backPage();"><img src="images/list.png" alt="" id="list"></button>
+    <script>
+        function backPage() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

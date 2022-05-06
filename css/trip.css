@@ -1,0 +1,322 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes arrow {
+        0%{transform:translate(0,0);}
+        100%{transform:translate(0,10px);}
+}
+
+h1 {
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+div#backDiv {
+    width: 100%;
+    height: 100%;
+    background-image: url("images/11.jpg");
+    background-size: cover;
+}
+
+#MainTitle {
+    color: white;
+    font-size: 550%;
+    margin-top: 10%;
+    animation: fadeIn 5s;
+    margin-left: 28%;
+    font-family: 'Black Han Sans', sans-serif;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+#subTitle {
+    color: white;
+    font-size: 250%;
+    margin-top: -1%;
+    margin-left: 28%;
+    animation: fadeIn 5s;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+#scroll {
+    margin-top: 20%;
+    margin-left: 49.5%;
+    font-size: 200%;
+    color: white;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+#arrow {
+    width: 50px;
+    height: 50px;
+    margin-left: 50%;
+    animation: arrow .5s infinite alternate;
+}
+
+ul {
+    margin: 0;
+    text-align: center;
+}
+ul li{
+    width: 25%;
+    color: white;
+    list-style: none;
+    margin-right: 5%;
+    font-size: 30px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: rgb(52, 52, 230);
+    font-family: 'Black Han Sans', sans-serif;
+    
+}
+ul li:hover {
+    background-color: gray;
+}
+a {
+    text-decoration-line: none;
+}
+a:link {
+    color : white;
+}
+a:visited {
+    color : white;
+}
+
+
+
+div#backDiv2 {
+    position: relative;
+    width: 100%;
+    height: 7000px;
+    background-color: rgb(226, 245, 255);
+    text-align: center;
+}
+
+#first {
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 8%;
+    height: 10%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#secondTitle {
+    font-size: 350%;
+}
+
+#fukuMap {
+    position: absolute;
+    width: 20%;
+    height: 5%;
+    margin-left: -6%;
+    margin-top: 5%;
+}
+
+#fuku1 {
+    position: absolute;
+    width: 23%;
+    height: 7%;
+    margin-left: 17%;
+    margin-top: 4%;
+}
+
+span {
+    text-align: left;
+    font-size: 110%;
+}
+/*--------------------------------------------------------------------*/
+
+#hakata {
+    position: absolute;
+    width: 30%;
+    height: 6%;
+    margin-left: -35%;
+    margin-top: 9%;
+}
+
+#comment1 {
+    position: absolute;
+    /* background-color: red; */
+    text-align: left;
+    margin-left: 50%;
+    margin-top: 1%;
+}
+
+.haka {
+    position: absolute;
+    width: 10%;
+    height: 3%;
+    margin-top: 13%;
+}
+
+#haka2 {
+    margin-left: 12%;
+}
+
+#haka3 {
+    margin-left: 24%;
+}
+
+#tower {
+    position: absolute;
+    width: 30%;
+    height: 8%;
+    margin-left: -45%;
+}
+
+.classTower {
+    position: absolute;
+    width: 17%;
+    height: 5%;
+}
+
+#tower2 {
+    margin-left: -14%;
+    margin-top: 10%;
+}
+
+#tower3 {
+    margin-left: 4%;
+    margin-top: 8%;
+}
+
+#tower4 {
+    margin-left: 22%;
+    margin-top: 6%;
+}
+
+#momochi {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+.classMomochi {
+    position: absolute;
+}
+
+#momochi2 {
+    margin-top: 15%;
+    margin-left: -25%;
+    width: 25%;
+    height: 5%;
+}
+
+#momochi3 {
+    margin-top: 20%;
+    margin-left: -47%;
+    width: 20%;
+    height: 3%;
+}
+
+#comment3 {
+    position: absolute;
+    /* background-color: red; */
+    margin-left: 20%;
+    margin-top: -1%;
+}
+
+/*--------------------------------------------------------------------*/
+
+#food1 {
+    position: absolute;
+    width: 30%;
+    height: 7%;
+    margin-left: -40%;
+    margin-top: 10%;
+}
+
+.classFood {
+    position: absolute;
+    width: 18%;
+    height: 4%;
+    margin-top: 11%;
+}
+
+#food2 {   
+    margin-left: -5%;
+}
+
+#food3 {
+    margin-left: 17%;
+}
+
+#food4 {
+    margin-top: 5%
+}
+
+.position-fixed {position: fixed;}
+
+.fourth {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    bottom: 50px;
+    right: 50px;
+    border: none;
+    border-radius: 50%;
+}
+
+#list {
+    width: 80px;
+    height: 80px;
+    bottom: 50px;
+    right: 50px;
+    position: fixed;
+}
+
+.classYamakasa {
+    position: absolute;
+    width: 20%;
+    height: 5%;
+}
+
+#yamakasa2 {
+    margin-left: -35%;
+
+}
+
+#yamakasa3 {
+    margin-left: -10%;
+}
+
+#yamakasa4 {
+    margin-left: 15%;
+}
+
+#yamakasa5 {
+    margin-left: -35%;
+    margin-top: 380px;
+}
+
+#yamakasa6 {
+    margin-left: -10%;
+    margin-top: 380px;
+}
+
+#yamakasa7 {
+    margin-left: 15%;
+    margin-top: 380px;
+}
+
+p {
+    font-family: 'Black Han Sans', sans-serif; 
+    font-size: 330%;
+    margin: 0;
+}
+
+pre {
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 17px;
+}

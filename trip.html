@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여행</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- 애니메이션 스크롤 다운 라이브러리 -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/trip.css">
+</head>
+<style>
+    div#backDiv {
+    width: 100%;
+    height: 100%;
+    background-image: url("images/11.jpg");
+    background-size: cover;
+}
+</style>
+<body>
+    <div id="backDiv">
+        <ul>
+            <a href="#page1"><li>관광지</li></a>
+            <a href="#page2"><li>음식</li></a>
+            <a href="#page3"><li>축제</li></a>
+        </ul>
+        <h1 id="MainTitle">FUKUOKA</h1>
+        <h3 id="subTitle">Japan</h3>
+        <h4 id="scroll">scroll</h4>
+        <img src="./images/pngegg.png" alt="" id="arrow">
+    </div>
+
+    <div id="backDiv2">
+        <div id="first" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <span id="secondTitle" style="font-family: 'Black Han Sans', sans-serif;">Fukuoka</span><br><br>
+            <span>후쿠오카는 마지막으로 간 해외여행이여서 그런지 기억 속에 많이 남아 있다.</span><br>
+            <span>다른 도시에 비해 규모가 크지 않아 단기간으로 관광하기 좋고 교통도 간단한 편이다.</span><br>
+            <span>이러한 후쿠오카의 관광지와 음식, 축제를 소개해볼까 한다.</span><br>
+        </div>
+        <img data-aos="fade-up-left" data-aos-offset="300" data-aos-easing="ease-in-sine" id="fukuMap" src="images/fukuMap.jpg" alt="">
+        <img data-aos="fade-down-left" data-aos-offset="300" data-aos-easing="ease-in-sine" id="fuku1" src="images/fuku1.jpg" alt="">
+        <div style="width: 100%; height: 600px;"></div> <!-- 줄바꿈 -->
+
+        <hr>
+        <h1 id="page1">관광지</h1>
+        (큰 이미지를 누르면 관련 링크로 이동합니다.)
+        <hr>
+
+        <img id="hakata" src="images/hakata.jpg" alt="" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">캐널시티 하카타</p>
+        <div id="comment1">
+            <pre data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">                
+하카타역에서 도보 10분거리에 있는 7개의 건물로 구성된 쇼핑몰
+도시의 극장이라는 컨셉으로 방문자들이 출연자가 되기도 관객이 되기도하는 장소이다.
+
+200개 이상 점포가 들어서 있으며 오락시설도 다수 있다. 중앙의 스테이지에는 거의 매일 여러 이벤트가 개최되고
+주말에는 Tv녹화나 음악라이브를 하기도 한다.                
+            </pre>
+        </div>
+        <img id="haka1" class="haka" src="images/haka1.jpg" alt="" data-aos="fade-up" data-aos-duration="3000">
+        <img id="haka2" class="haka" src="images/haka2.jpg" alt="" data-aos="fade-up" data-aos-duration="2000">
+        <img id="haka3" class="haka" src="images/haka3.jpg" alt="" data-aos="fade-up" data-aos-duration="1000">
+
+        <div style="width: 100%; height: 600px;"></div> <!-- 줄바꿈 -->
+        <hr>
+
+        <div id="comment2">
+            <p data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">후쿠오카 타워</p>
+            <pre style="margin-top: 1%;" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+길이 234m로 일본 최고 높이의 타워.
+8000장의 반투명 거울로 뒤덮힌 외관은 '미러 세일'이라는 애칭으로 사랑 받고 있다.
+최상층 전망대에서는 후쿠오카 거리와 하마타만 등 전망을 파노라마로 조망할 수 있고
+계절, 시즌별로 야간조명을 바꿔 색다른 느낌을 준다.
+            </pre>
+        </div>
+        <img id="tower" src="images/tower.jpg" alt="" data-aos="fade-right" data-aos-offset="700" data-aos-easing="ease-in-sine">
+        <img id="tower2" class="classTower" src="images/tower2.jpg" alt="" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <img id="tower3" class="classTower" src="images/tower3.jpg" alt="" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <img id="tower4" class="classTower" src="images/tower4.jpg" alt="" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+
+        <div style="width: 100%; height: 650px;"></div> <!-- 줄바꿈 -->
+        <hr>
+
+        <div id="comment3">
+            <p style="margin-top: 20%;" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">모모치 해변공원</p>
+            <pre data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+후쿠오카 타워 북쪽에 있는 인공 해변 공원으로 2.5km에 달한다.
+모래사장 중심에는 상업시설 '마리존'이 있어 상점들이 입점해 있고
+여러 스포츠를 즐기는 사람들로 붐비는 도시의 오아시스이다.
+            </pre>
+        </div>
+
+        <img id="momochi" src="images/momochi.jpg" alt="" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <img id="momochi2" class="classMomochi" src="images/momochi2.jpg" alt="" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <img id="momochi3" class="classMomochi" src="images/momochi3.jpg" alt="" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+
+        <div style="width: 100%; height: 750px;"></div> <!-- 줄바꿈 -->
+        <hr>
+        <h1 id="page2">음식</h1>
+        (큰 이미지를 누르면 관련 링크로 이동합니다.)
+        <hr>
+
+        <img id="food1" src="images/food1.jpeg" alt="" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div id="comment4">
+            <p data-aos="fade-up" data-aos-duration="3000">명란</p>
+            <pre data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+명란은 후쿠오카의 대표적인 특산품으로 명란을 이용한 요리가 인기가 많다.
+명란구이를 포함해 만두, 덮밥 등 다양한 요리가 있다. 특히 명란덮밥으로 유명한 집인 멘타이쥬는
+꼭 가야할 필수 코스로 자리잡고 있다.
+            </pre>
+        </div>
+
+        <img id="food2" class="classFood" src="images/food2.jpg" alt="" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <img id="food3" class="classFood" src="images/food3.jpg" alt="" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+
+        <div style="width: 100%; height: 600px;"></div> <!-- 줄바꿈 -->
+        <hr>
+
+        <img id="food4" src="images/nabe.jpg" alt="" data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000"> 
+
+        <div id="comment5" data-aos="fade-up" data-aos-duration="3000">
+            <pre>
+                <p>모츠나베</p>
+모츠나베는 후쿠오카지역의 향토요리이자 소울푸드로서 육수에 곱창과 부추, 두부등을 넣은 전골 요리이다.
+후쿠오카 음식을 이야기할때 빠지지 않고 거론되는 음식이며 호불호가 갈리는 음식이지만 이 맛이 계속 생각이 난다고 한다.
+모츠나베 전문점으로는 하카타에 있는 ‘오오이시'(おおいし), ‘모츠쇼 다이묘라나레’가 있다.
+            </pre>
+        </div>
+        <div style="width: 100%; height: 60px;"></div> <!-- 줄바꿈 -->
+        <hr>
+
+        <h1 id="page3">축제</h1>
+        (큰 이미지를 누르면 관련 링크로 이동합니다.)
+        <hr>
+        <h1 style="margin-top: 2%;" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">하카타 기온 아마카사</h1>
+
+        <img id="yamakasa1" src="images/yamakasa.jpg" alt="" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+
+        <div id="comment6" data-aos="fade-up"
+        data-aos-duration="2000">
+            <pre>
+일본에서 가장 신나는 축제 중 하나이다. 후쿠오카의 하카타를 중심으로 개최되며
+전통복을 입고 장식된 1톤 무게 가마 야마카사를 메고 하카타 거리를 질주한다.
+기원은 1241년에 하카타에 역병이 유행했을 때 죠텐지 사원을 창립한 쇼이치코쿠시가 
+기도수를 뿌려서 마을을 정화하고 역병퇴치를 기원한 것이 시초라고 전해지고 있다.
+
+2016년 12월에 유네스코 무형 문화 유산으로 등록되었다.
+            </pre>
+        </div>
+        <img id="yamakasa2" class="classYamakasa" src="images/yamakasa2.jpg" alt="" data-aos="fade-up"
+        data-aos-duration="3000">
+        <img id="yamakasa3" class="classYamakasa" src="images/yamakasa3.jpg" alt="" data-aos="fade-up"
+        data-aos-duration="2000">
+        <img id="yamakasa4" class="classYamakasa" src="images/yamakasa4.jpg" alt="" data-aos="fade-up"
+        data-aos-duration="1000">
+        <img id="yamakasa5" class="classYamakasa" src="images/yamakasa5.jpg" alt="" data-aos="fade-down"
+        data-aos-duration="3000">
+        <img id="yamakasa6" class="classYamakasa" src="images/yamakasa6.jpg" alt="" data-aos="fade-down"
+        data-aos-duration="2000">
+        <img id="yamakasa7" class="classYamakasa" src="images/yamakasa7.jpg" alt="" data-aos="fade-down"
+        data-aos-duration="1000">
+    </div>
+
+    <div style="width: 100%; font-size: 30px; text-align: center; background-color: grey;">
+        <a href="#backDiv" style="font-family: 'Noto Sans KR', sans-serif">TOP</a>
+    </div>
+
+    <button class="fourth position-fixed" onclick="backPage();"><img src="images/list.png" alt="" id="list"></button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- 애니메이션 스크롤 다운 라이브러리 -->
+
+    <script>
+        AOS.init(); // 애니메이션 스크롤 다운 라이브러리
+    </script>
+    <script src="js/trip.js"></script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+</head>
+<style>
+#back {
+    background-color: white;
+    width: 20vw;
+    height: 100vh;
+    text-align: center;
+    float: left;
+}
+#back2 {
+    background-image: url("images/memberBack.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+
+}
+body {
+    margin: 0;
+}
+
+.position-fixed {position: fixed;}
+
+.fourth {
+    width: 80px;
+    height: 80px;
+    bottom: 50px;
+    right: 50px;
+    border: none;
+    border-radius: 50%;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    bottom: 50px;
+    right: 50px;
+    position: fixed;
+}
+.textbox {
+    width: 75%;
+    height: 50px;
+    border-top: none;
+    border-bottom: solid 2px black;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 10px;
+}
+#password {
+    margin-bottom: 0;
+}
+
+#button1 {
+    width: 75%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(52, 52, 230);
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#button2 {
+    width: 75%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(52, 52, 230);
+    color: white;
+    font-size: 20px;
+}
+
+#button1:hover {   /* 버튼 눌리는 느낌을 표현*/
+    margin-left: -2px;
+    margin-top: -2px;
+}
+
+#button1:active {   /* 버튼 눌리는 느낌을 표현*/
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+#button2:hover {   /* 버튼 눌리는 느낌을 표현*/
+    margin-left: -2px;
+    margin-top: -2px;
+}
+
+#button2:active {   /* 버튼 눌리는 느낌을 표현*/
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+h1 {
+    padding-top: 40%;
+}
+
+span {
+    margin: 0;
+    color: gray;
+    font-size: 12px;
+    padding-right: 20px;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#tableDiv {
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    display: none;
+    margin-left: 1000px;
+    margin-top: 200px;
+    background-color: white;
+}
+
+.close {
+    margin: 0;
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+}
+
+</style>
+<body>
+    <div id="back">
+            <form action="javascript:alert('가입완료'); document.memberFrm.reset();" name="memberFrm">
+            <h1>회원가입</h1>
+            <input type="text" name="id" id="id" class="textbox" placeholder="아이디 (4~12자)"><br>
+            <input type="text" name="name" id="name" class="textbox" placeholder="이름"><br>
+            <input type="password" name="password" id="password" class="textbox" placeholder="비밀번호 (6~15자)"><br>
+            <span id="span">숫자, 영문자, 특수문자(!,@,#,$,%,^) 포함</span><br>
+            <input type="password" name="password2" id="password2" class="textbox" placeholder="비밀번호 확인"><br>
+            <input type="email" name="email" id="email" class="textbox" placeholder="E-mail (영문 숫자 조합 4~12)"><br>
+            <button type="submit" id="button1">가입하기</button>
+        </form>
+        <button id="button2" onclick="table();">회원목록</button>
+        </div>
+        <div id="tableDiv" >
+            <span onclick="this.parentElement.style.display='none'" class="close">X</span> 
+            <table id="tb-user">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>email</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    <div id="back2"></div>
+    <button class="fourth position-fixed" onclick="backPage();"><img src="images/list.png" alt=""></button>
+
+    <script>
+        function backPage() {
+            window.location.href = "index.html";
+        }
+
+        document.memberFrm.onsubmit = function() {
+            const idVal = document.querySelector('#id').value;
+            const nameVal = document.querySelector('#name').value;
+            const passVal = document.querySelector('#password').value;
+            const pass2Val = document.querySelector('#password2').value;
+            const emailVal = document.querySelector('#email').value;
+            
+            if(!/^.{4,12}$/.test(idVal))
+            {
+                alert("id는 4~12자리여야 합니다.");
+                return false;
+            }
+
+            if(!/[가-힣]{2,}/.test(nameVal))
+            {
+                alert("이름은 한글 2글자 이상 입력해야 합니다.");
+                return false;
+            }
+
+            if(!/^.{6,15}$/.test(passVal))
+            {
+                alert("password는 6~15자리여야 합니다.");
+                return false;
+            }
+
+            if(!/[0-9]/.test(passVal))
+            {
+                alert("비밀번호에는 숫자가 1개 이상 포함되어야 합니다.");
+                return false;
+            }
+
+        if(!/[a-zA-Z]/.test(passVal))
+            {
+                alert("비밀번호에는 영문자가 1개 이상 포함되어야 합니다.");
+                return false;
+            }
+
+        if(!/[!@#$%^]/.test(passVal))
+            {
+                alert("비밀번호에는 특수문자(!,@,#,$,%,^)중 1개 이상 포함되어야 합니다.");
+                return false;
+            }
+
+            if(passVal !== pass2Val)
+            {
+                alert("비밀번호가 일치하지 않습니다.")
+                return false;
+            }
+
+            if(!/[0-9A-Za-z]{4,12}@/.test(emailVal))
+            {
+                alert("이메일 @ 앞에는 영문 숫자 조합 4~12자여야 합니다.")
+                return false;
+            }
+            console.log(idVal, nameVal, passVal, pass2Val, emailVal);
+
+            // 유저 객체
+            const user = {
+                id : idVal,
+                name : nameVal,
+                email : emailVal
+            }
+            
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+            users.push(user);
+
+            localStorage.setItem('users', JSON.stringify(users));
+
+            // 화면 render
+            renderGuestbook(users);
+        }
+
+        const table = () => {
+            document.getElementById("tableDiv").style.display = "block";
+        }
+
+        const renderGuestbook = (users = JSON.parse(localStorage.getItem('users'))) => {
+            const tbody = document.querySelector("#tb-user tbody");
+            tbody.innerHTML = "";
+
+            users.forEach((user, index) => {
+                const {id, name, email} = user;
+                const html = `<tr>
+                    <td>${id}</td>
+                    <td>${name}</td>
+                    <td>${email}</td>
+                </tr>`;
+                tbody.innerHTML += html;    
+            })
+        };
+
+        window.addEventListener('load', () => {
+            renderGuestbook();
+        });
+    </script>
+</body>
+</html>

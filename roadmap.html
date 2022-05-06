@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>roadmap</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Cute+Font&family=Sunflower:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/roadmap.css">
+
+    <style>
+    .swiper-slide {
+        position: relative;
+        font-size: 18px;
+        background-image: url("images/roadback.jpg");
+        background-size: cover;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <h1 id="page1">2022-08</h1>
+                <img id="circle" src="images/circle.png" alt="">
+                <hr>
+                <h2 id="h2_1">교육원 수료 완료하기!</h2>
+                    <pre id="pre1">
+8월까지는 다른 생각하지 말고 수료에 집중하기!
+따라가기도 벅차다. 잡생각 최대한 하지 않고 앞날 걱정 하지 않기
+
+7월 쯤에 가고 싶은 개발 분야의 회사들을 찾아보면서
+내 성향에 맞는 직무 고민해보기
+                    </pre>
+
+                    <p id="p1">그 때까지 복습 꾸준히 하기!</p>
+            </div>
+
+            <div class="swiper-slide">
+                <h1 id="page2">2022-09 ~ 2025-12</h1>
+                <img id="circle" src="images/circle.png" alt="">
+                <hr>
+                <h2 id="h2_2">솔루션 회사 입사하기!</h2>
+                <pre id="pre2">
+수료 후 빠르게 회사에 입사하자 
+2 ~ 3년간 끈기있게 다니면서 업무 빠르게 익히고 적응하기!
+다음 플랜을 위한 다양한 지식과 경험을 쌓도록 하자.
+                </pre>
+
+                <p id="p2">이직을 위한 발판을 마련 하자!</p>
+            </div>
+
+            <div class="swiper-slide">
+                <h1 id="page3">2025 ~ 2026</h1>
+                <img id="circle" src="images/circle.png" alt="">
+                <hr>
+                <h2 id="h2_3">SM 분야 회사로 이직하기</h2>
+                <pre id="pre3">
+솔루션 기업에서 업무와 환경에 적응 했다는 전제하에 진행
+지금까지 익힌 지식과 경험을 바탕으로 다른 분야로 이직을 하기
+업무지식을 더 깊게 경험할 수 있도록 하기
+                </pre>
+                <p id="p3">새로운 분야를 마주하자</p>
+            </div>
+            <div class="swiper-slide">
+                <h1 id="page4">2026 ~ ....</h1>
+                <img id="stop" src="images/stop.png" alt="">
+                <hr>
+
+                <h2 id="h2_4">한사람의 개발자로서 자리 잡기</h2>
+
+                <pre id="pre4">
+플랜대로 잘 적응하고 여러분야를 경험했다면 한사람분의 업무를 할 수 있는 개발자가 되도록 하자.
+아직 배울 것들이 많겠지만 4 ~ 5년간의 경험과 노력으로 해낼 수 있을 것이다.
+                </pre>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <button class="fourth position-fixed" onclick="backPage();" style="z-index: 1;"><img src="images/list.png" alt="" id="list"></button>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+    </script>
+    <script src="js/roadmap.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+}
+html,body {
+    max-width:none;
+    max-height: none;
+    margin: 0;
+}
+
+@keyframes ani {
+    10%{transform:translate(1px,2px);}
+    20%{transform:translate(2px,4px);}
+    30%{transform:translate(3px,6px);}
+    40%{transform:translate(2px,8px);}
+    50%{transform:translate(1px,10px);}
+    60%{transform:translate(0px,8px);}
+    70%{transform:translate(-1px,6px);}
+    80%{transform:translate(-2px,4px);}
+    90%{transform:translate(-3px,2px);}
+    100%{transform:translate(-1px,2px);}
+}
+@keyframes arrow {
+    0%{transform:translate(0,0);}
+    100%{transform:translate(0,10px);}
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.one {
+    max-width:none;
+    max-height: none;
+    background-image: url("images/backgreen.png");
+    background-size: cover;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#MainTitle {
+    color: white;
+    font-size: 100px;
+    animation: fadeIn 3s;
+    padding-top: 40vh;
+}
+
+#subTitle {
+    color: white;
+    animation: fadeIn 3s;
+}
+
+#snap {
+    padding-top: 20vh;
+    font-size: 30px;
+    color: white;
+}
+
+#arrow {
+    padding-top: 2vh;
+    width: 50px;
+    height: 50px;
+    animation: arrow .5s infinite alternate;
+}
+
+.parent {
+    overflow: scroll;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+}
+
+.part {
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.two {
+    max-width:none;
+    max-height: none;
+    position: relative;
+    background-image: url("images/backblack.png");
+    background-size: cover;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#myPixure {
+    float: left;
+    margin-left: 20%;
+    margin-top: 1%;
+    width: 20vw;
+    height: 50vh;
+    border-radius: 10%;
+}
+
+#about {
+    color: white;
+    font-size: 40px;
+    padding-top: 10%;
+    margin-left: -40%;
+    font-family: 'Sunflower', sans-serif;
+}
+
+#name {
+    margin-left: 50%;
+    margin-bottom: 50%;
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    font-family: 'Sunflower', sans-serif;
+}
+
+#value {
+    text-align: left;
+    position: absolute;
+    color: white;
+    margin-top: 5%;
+    margin-left: 45%;
+    font-size: 230%;
+    font-family: 'Cute Font', cursive;
+}
+
+#snap2 {
+    position: absolute;
+    margin-top: 27%;
+    margin-left: 48.5%;
+    font-size: 30px;
+    color: white;
+}
+
+#arrow2 {
+    position: absolute;
+    margin-top: 30%;
+    margin-left: -21%;
+    width: 50px;
+    height: 50px;
+    animation: arrow .5s infinite alternate;
+}
+
+.three {
+    max-width:none;
+    max-height: none;
+    position: relative;
+    background-image: url("images/keywordback.jpg");
+    background-size: cover;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.keyword { 
+    position: absolute;
+    animation:ani 3s infinite;
+    display: inline-block;
+    font-size: 300%;
+    font-family: 'Cute Font', cursive;
+    color: white;
+}
+
+#thirdMain {
+    color: white;
+    font-size: 50px;
+    padding-top: 40vh;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+#key1 {
+    margin-top: 0%;
+    margin-left: -20%;
+}
+
+#key2 {
+    margin-top: 0%;
+    margin-left: 12%;
+}
+
+#key3 {
+    margin-top: 15%;
+    margin-left: 8%;
+}
+
+#key4 {
+    margin-top: -18%;
+    margin-left: 0%;
+}
+
+#key5 {
+    margin-top: -10%;
+    margin-left: -20%;
+}
+
+#key6 {
+    margin-top: 15%;
+    margin-left: -30%;
+}
+
+#key7 {
+    margin-top: 3%;
+    margin-left: -0%;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+#key8 {
+    margin-top: -18%;
+    margin-left: -40%;
+}
+
+#key9 {
+    margin-top: -12%;
+    margin-left: -35%;
+}
+
+#key10 {
+    margin-top: 3%;
+    margin-left: -35%;
+}
+
+#key11 {
+    margin-top: -10%;
+    margin-left: 20%;
+}
+
+#key12 {
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+#snap3 {
+    position: absolute;
+    margin-top: 17%;
+    margin-left: 48%;
+    font-size: 30px;
+    color: white;
+}
+
+#arrow3 {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: -1.5%;
+    width: 50px;
+    height: 50px;
+    animation: arrow .5s infinite alternate;
+}
+
+.four {
+    max-width:none;
+    max-height: none;
+    position: relative;
+    background-image: url("images/backgreen.png");
+    background-size: cover;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#Thank {
+    color: white;
+    font-size: 100px;
+    padding-top: 40vh;
+}
+
+#end {
+    padding-top: 10%;
+    font-size: 30px;
+    color: white;
+}
+
+#list {
+width: 80px;
+height: 80px;
+bottom: 50px;
+right: 50px;
+position: fixed;
+}
+
+.position-fixed {position: fixed;}   

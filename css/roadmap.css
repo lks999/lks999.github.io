@@ -1,0 +1,181 @@
+html,body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    position: relative;
+    font-size: 18px;
+    background-image: url("images/roadback.jpg");
+    background-size: cover;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.position-fixed {position: fixed;}
+
+.fourth {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    bottom: 50px;
+    right: 50px;
+    border: none;
+    border-radius: 50%;
+}
+
+#list {
+    width: 80px;
+    height: 80px;
+    bottom: 50px;
+    right: 50px;
+    position: fixed;
+}
+
+hr {
+    position: absolute;
+    background-color: gray;
+    border: gray;
+    margin-top: 20%;
+    height: 20px;
+    width: 100%;
+    z-index: -1;
+}
+
+#circle, #stop {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 18%;
+    margin-left: 47%;
+    z-index: 1;
+}
+
+h1 {
+    position: absolute;
+    font-size: 500%;
+    color: white;
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+pre {
+    font-family: 'Sunflower', sans-serif;
+}
+
+p {
+    font-family: 'Cute Font', cursive;
+}
+
+#page1 {
+    margin-left: 80vh;
+}
+
+#h2_1 {
+    color: white;
+    margin-top: 13%;
+    margin-left: 75vh;
+    font-size: 250%;
+}
+
+#pre1 {
+    color: white;
+    font-size: 150%;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+#p1 {
+    color: white;
+    font-size: 340%;
+    margin-left: 60%;
+    margin-top: -9%;
+    transform: rotate(320deg);
+}
+
+#page2 {
+    margin-left: 55vh;
+}
+
+#h2_2 {
+    color: white;
+    margin-top: 13%;
+    margin-left: 75vh;
+    font-size: 250%;
+}
+
+#pre2 {
+    color: white;
+    font-size: 150%;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+#p2 {
+    color: white;
+    font-size: 340%;
+    margin-left: 60%;
+    margin-top: -7%;
+    transform: rotate(320deg);
+}
+
+#page3 {
+    margin-left: 75vh;
+}
+
+#h2_3 {
+    color: white;
+    margin-top: 13%;
+    margin-left: 75vh;
+    font-size: 250%;
+}
+
+#pre3 {
+    color: white;
+    font-size: 150%;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+#p3 {
+    color: white;
+    font-size: 340%;
+    margin-left: 60%;
+    margin-top: -9%;
+    transform: rotate(320deg);
+}
+
+#page4 {
+    margin-left: 80vh;
+}
+
+#h2_4 {
+    color: white;
+    margin-top: 13%;
+    margin-left: 75vh;
+    font-size: 250%;
+}
+
+#pre4 {
+    color: white;
+    font-size: 150%;
+    margin-left: 25%;
+    margin-top: 10%;
+}
